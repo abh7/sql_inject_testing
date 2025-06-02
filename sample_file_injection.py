@@ -114,7 +114,7 @@ def get_res(columns,table_name,where_clause,instance_url, access_token):
     }
     
     params = {"q": query_text}
-    response = requests.get(query_url, headers=headers, params={"q": "SELECT %s FROM %s WHERE %s" % (", ".join(columns), table_name, where_clause)})
+    response = requests.get(query_url, headers=headers, params={"q": "SELECT CaseNumber from Case"})
     if response.status_code == 200:
         return response.json().get('records', []),params
     else:
