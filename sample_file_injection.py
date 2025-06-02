@@ -127,7 +127,7 @@ def get_res(columns,table_name,where_clause,instance_url, access_token):
 
 case_id_list = ['01770167','01770166']
 case_history = {}
-instance_url = "https://eforce--test.sandbox.my.salesforce.com"
-access_token = "00D3I0000000mv9!AQEAQGa2YHm3sfDHOPRozluo6kkdXL42etbAeB2ohHnpFmb60hs7Ob.QKJ8utY8j5sbflZoBmoVqXh2FNQGVTiARmZDuNEdc"
+instance_url = ""
+access_token = ""
 case_status_details(case_id_list,case_history,instance_url,
                         access_token)
